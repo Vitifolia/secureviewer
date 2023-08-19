@@ -13,3 +13,4 @@ scapy
 infobip-api-python-sdk
 infobip-api-python-client
 joblib
+scikit-learn
