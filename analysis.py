@@ -175,7 +175,7 @@ else:
 
         col1, col2 = st.columns([0.7, 0.3])
 
-        with open("날짜별 악성 접근 빈도_tab.html", "r",encoding="UTF-8") as file:
+        with open("graph1.html", "r",encoding="UTF-8") as file:
             html_code1 = file.read()
             with col1:
                 st.components.v1.html(html_code1)
@@ -199,12 +199,12 @@ else:
         col3, col4 = st.columns([2,3])
 
 
-        with open("접근 목적_pie.html", "r",encoding="UTF-8") as file:
+        with open("graph2.html", "r",encoding="UTF-8") as file:
             html_code2 = file.read()
             with col3:
                 st.components.v1.html(html_code2)
 
-        with open("총 Flags_pie-rose.html", "r",encoding="UTF-8") as file:
+        with open("graph3.html", "r",encoding="UTF-8") as file:
             html_code3 = file.read()
             with col4:
                 st.components.v1.html(html_code3)
