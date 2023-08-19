@@ -12,3 +12,4 @@ streamlit_chat
 scapy
 infobip-api-python-sdk
 infobip-api-python-client
+joblib
