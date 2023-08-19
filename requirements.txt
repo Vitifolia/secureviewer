@@ -6,7 +6,6 @@ pyecharts
 lightgbm
 streamlit_extras
 st_pages
-PIL
 markdownlit
 openai
 streamlit_chat
