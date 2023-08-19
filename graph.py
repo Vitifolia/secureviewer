@@ -208,7 +208,7 @@ def graph_main():
     tab.add(z4, "시간별 바 그래프")
     tab.add(z5, "날짜별 선형 그래프")
     tab.add(z6, "날짜별 바 그래프")
-    tab.render("날짜별 악성 접근 빈도_tab.html")
+    tab.render("graph1.html")
 
     # 접근 목적
     xp = ["정상", "공격시도", "피해"]
@@ -229,7 +229,7 @@ def graph_main():
         .set_global_opts(title_opts = opts.TitleOpts(title = "총 접근 목적(%)"),
                         legend_opts=opts.LegendOpts(orient="vertical", pos_top="80%", pos_left="5%"))
         .set_series_opts(label_opts=opts.LabelOpts(formatter="{b}: {c}"))
-        .render("접근 목적_pie.html")
+        .render("graph2.html")
     )
 
     # 총 Flags 분류 Pie-Rose
@@ -252,5 +252,5 @@ def graph_main():
         )
         .set_colors(['#072227', '#778899', '#4FBDBA', '#E96479', '#4FBDBA', '#7A5DC1', '#444693'])
         .set_global_opts(title_opts = opts.TitleOpts(title = "총 Flags(%)"))
-        .render("총 Flags_pie-rose.html")
+        .render("graph3.html")
     )
