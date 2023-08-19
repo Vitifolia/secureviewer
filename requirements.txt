@@ -1,2 +1,17 @@
 streamlit == 0.87.0
 pandas == 1.3.2
+pymysql
+numpy
+pyecharts
+streamlit.components.v1
+streamlit_extras
+st_pages
+PIL
+markdownlit
+openai
+streamlit_chat
+scapy_run
+hashlib
+dateutil
+infobip-api-python-sdk
+infobip-api-python-client
