@@ -10,7 +10,5 @@ markdownlit
 openai
 streamlit_chat
 scapy
-hashlib
-dateutil
 infobip-api-python-sdk
 infobip-api-python-client
