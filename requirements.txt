@@ -10,7 +10,7 @@ PIL
 markdownlit
 openai
 streamlit_chat
-scapy_run
+scapy
 hashlib
 dateutil
 infobip-api-python-sdk
