@@ -12,7 +12,7 @@ from streamlit_extras.stylable_container import stylable_container
 from streamlit_extras.stateful_button import button
 from streamlit_extras.colored_header import colored_header
 from streamlit_extras.app_logo import add_logo
-import datetime
+import datetime as dt
 
 
 add_logo("logo.png", height=100)
@@ -170,7 +170,7 @@ else:
 
         df = pd.DataFrame(data)
 
-        send_data1 = f'{data}와 같은 상황에서 proto,flags,tos가 어떤 상태일때 공격이 들어오는지 분석하고 이에 따른 사이버보안방법을 알려줘'
+        send_data1 = f'{data}와 같은 상황에서 proto,flags,tos가 어떤 상태일때 공격이 들어오는지 분석해서 레포트형식으로 알려줘'
         send_data = '스마트인재개발원에 대해 알려줘'
 
         col1, col2 = st.columns([0.7, 0.3])
@@ -188,7 +188,7 @@ else:
                         css_styles=css_style):
                         output = generate_response(send_data1)
                         st.write(output)
-                        now = datetime.now()
+                        now = dt.datetime.now()
                         # 년, 월, 일 형식으로 포맷팅
                         formatted_datetime = now.strftime("%Y-%m-%d %H:%M")
                         st.download_button("분석결과", output, file_name=f"{formatted_datetime} 분석결과.txt")        
