@@ -99,8 +99,8 @@ def generate_response(prompt):
         prompt=prompt,
         max_tokens=3000,
         stop=None,
-        temperature=0,
-        top_p=1,
+        temperature=0.7,
+        top_p=0.8,
     )
  
     message = completions["choices"][0]["text"].replace("\n", "")
