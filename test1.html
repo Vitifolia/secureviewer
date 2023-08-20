@@ -42,19 +42,19 @@
         }
     </style>
     <div class="tab">
-            <button class="tablinks" onclick="showChart(event, '9dcfb65d882b4066934914f2fec04590')">시간별 선형 그래프</button>
-            <button class="tablinks" onclick="showChart(event, '5d8cb7d6bf7a4c8b8a5b35ce38e39265')">시간별 바 그래프</button>
-            <button class="tablinks" onclick="showChart(event, 'b98aa93d4f9842b3a8ccd8c81fded508')">날짜별 선형 그래프</button>
-            <button class="tablinks" onclick="showChart(event, '6faea772076843fe88db55a46d8c416b')">날짜별 바 그래프</button>
+            <button class="tablinks" onclick="showChart(event, '37ea9f82c026487696447de1e83987cb')">시간별 선형 그래프</button>
+            <button class="tablinks" onclick="showChart(event, '13a50339b7f14bb59423798c4c04bff1')">시간별 바 그래프</button>
+            <button class="tablinks" onclick="showChart(event, '9fd713ba69c74123811087ca01dbfe50')">날짜별 선형 그래프</button>
+            <button class="tablinks" onclick="showChart(event, 'c3ecec4a42dd404099fcf8976542a685')">날짜별 바 그래프</button>
     </div>
 
     <div class="box">
-                <div id="9dcfb65d882b4066934914f2fec04590" class="chart-container" style="width:1200px; height:500px; "></div>
+                <div id="37ea9f82c026487696447de1e83987cb" class="chart-container" style="width:1200px; height:500px; "></div>
     <script>
-            document.getElementById('9dcfb65d882b4066934914f2fec04590').style.width = document.getElementById('9dcfb65d882b4066934914f2fec04590').parentNode.clientWidth + 'px';
-        var chart_9dcfb65d882b4066934914f2fec04590 = echarts.init(
-            document.getElementById('9dcfb65d882b4066934914f2fec04590'), 'white', {renderer: 'canvas'});
-        var option_9dcfb65d882b4066934914f2fec04590 = {
+            document.getElementById('37ea9f82c026487696447de1e83987cb').style.width = document.getElementById('37ea9f82c026487696447de1e83987cb').parentNode.clientWidth + 'px';
+        var chart_37ea9f82c026487696447de1e83987cb = echarts.init(
+            document.getElementById('37ea9f82c026487696447de1e83987cb'), 'white', {renderer: 'canvas'});
+        var option_37ea9f82c026487696447de1e83987cb = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -2246,6 +2246,9 @@
             "itemGap": 10,
             "itemWidth": 25,
             "itemHeight": 14,
+            "textStyle": {
+                "color": "#fff"
+            },
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
             "borderWidth": 1,
@@ -2518,7 +2521,11 @@
             "itemGap": 10,
             "textAlign": "auto",
             "textVerticalAlign": "auto",
-            "triggerEvent": false
+            "triggerEvent": false,
+            "textStyle": {
+                "color": "#fff",
+                "fontSize": 18
+            }
         }
     ],
     "dataZoom": [
@@ -2548,14 +2555,14 @@
         }
     ]
 };
-        chart_9dcfb65d882b4066934914f2fec04590.setOption(option_9dcfb65d882b4066934914f2fec04590);
+        chart_37ea9f82c026487696447de1e83987cb.setOption(option_37ea9f82c026487696447de1e83987cb);
     </script>
-                <div id="5d8cb7d6bf7a4c8b8a5b35ce38e39265" class="chart-container" style="width:1200px; height:500px; "></div>
+                <div id="13a50339b7f14bb59423798c4c04bff1" class="chart-container" style="width:1200px; height:500px; "></div>
     <script>
-            document.getElementById('5d8cb7d6bf7a4c8b8a5b35ce38e39265').style.width = document.getElementById('5d8cb7d6bf7a4c8b8a5b35ce38e39265').parentNode.clientWidth + 'px';
-        var chart_5d8cb7d6bf7a4c8b8a5b35ce38e39265 = echarts.init(
-            document.getElementById('5d8cb7d6bf7a4c8b8a5b35ce38e39265'), 'white', {renderer: 'canvas'});
-        var option_5d8cb7d6bf7a4c8b8a5b35ce38e39265 = {
+            document.getElementById('13a50339b7f14bb59423798c4c04bff1').style.width = document.getElementById('13a50339b7f14bb59423798c4c04bff1').parentNode.clientWidth + 'px';
+        var chart_13a50339b7f14bb59423798c4c04bff1 = echarts.init(
+            document.getElementById('13a50339b7f14bb59423798c4c04bff1'), 'white', {renderer: 'canvas'});
+        var option_13a50339b7f14bb59423798c4c04bff1 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -3175,6 +3182,9 @@
             "itemGap": 10,
             "itemWidth": 25,
             "itemHeight": 14,
+            "textStyle": {
+                "color": "#fff"
+            },
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
             "borderWidth": 1,
@@ -3447,7 +3457,11 @@
             "itemGap": 10,
             "textAlign": "auto",
             "textVerticalAlign": "auto",
-            "triggerEvent": false
+            "triggerEvent": false,
+            "textStyle": {
+                "color": "#fff",
+                "fontSize": 18
+            }
         }
     ],
     "dataZoom": [
@@ -3477,14 +3491,14 @@
         }
     ]
 };
-        chart_5d8cb7d6bf7a4c8b8a5b35ce38e39265.setOption(option_5d8cb7d6bf7a4c8b8a5b35ce38e39265);
+        chart_13a50339b7f14bb59423798c4c04bff1.setOption(option_13a50339b7f14bb59423798c4c04bff1);
     </script>
-                <div id="b98aa93d4f9842b3a8ccd8c81fded508" class="chart-container" style="width:1200px; height:500px; "></div>
+                <div id="9fd713ba69c74123811087ca01dbfe50" class="chart-container" style="width:1200px; height:500px; "></div>
     <script>
-            document.getElementById('b98aa93d4f9842b3a8ccd8c81fded508').style.width = document.getElementById('b98aa93d4f9842b3a8ccd8c81fded508').parentNode.clientWidth + 'px';
-        var chart_b98aa93d4f9842b3a8ccd8c81fded508 = echarts.init(
-            document.getElementById('b98aa93d4f9842b3a8ccd8c81fded508'), 'white', {renderer: 'canvas'});
-        var option_b98aa93d4f9842b3a8ccd8c81fded508 = {
+            document.getElementById('9fd713ba69c74123811087ca01dbfe50').style.width = document.getElementById('9fd713ba69c74123811087ca01dbfe50').parentNode.clientWidth + 'px';
+        var chart_9fd713ba69c74123811087ca01dbfe50 = echarts.init(
+            document.getElementById('9fd713ba69c74123811087ca01dbfe50'), 'white', {renderer: 'canvas'});
+        var option_9fd713ba69c74123811087ca01dbfe50 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -3744,6 +3758,9 @@
             "itemGap": 10,
             "itemWidth": 25,
             "itemHeight": 14,
+            "textStyle": {
+                "color": "#fff"
+            },
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
             "borderWidth": 1,
@@ -3855,7 +3872,11 @@
             "itemGap": 10,
             "textAlign": "auto",
             "textVerticalAlign": "auto",
-            "triggerEvent": false
+            "triggerEvent": false,
+            "textStyle": {
+                "color": "#fff",
+                "fontSize": 18
+            }
         }
     ],
     "dataZoom": [
@@ -3885,14 +3906,14 @@
         }
     ]
 };
-        chart_b98aa93d4f9842b3a8ccd8c81fded508.setOption(option_b98aa93d4f9842b3a8ccd8c81fded508);
+        chart_9fd713ba69c74123811087ca01dbfe50.setOption(option_9fd713ba69c74123811087ca01dbfe50);
     </script>
-                <div id="6faea772076843fe88db55a46d8c416b" class="chart-container" style="width:1200px; height:500px; "></div>
+                <div id="c3ecec4a42dd404099fcf8976542a685" class="chart-container" style="width:1200px; height:500px; "></div>
     <script>
-            document.getElementById('6faea772076843fe88db55a46d8c416b').style.width = document.getElementById('6faea772076843fe88db55a46d8c416b').parentNode.clientWidth + 'px';
-        var chart_6faea772076843fe88db55a46d8c416b = echarts.init(
-            document.getElementById('6faea772076843fe88db55a46d8c416b'), 'white', {renderer: 'canvas'});
-        var option_6faea772076843fe88db55a46d8c416b = {
+            document.getElementById('c3ecec4a42dd404099fcf8976542a685').style.width = document.getElementById('c3ecec4a42dd404099fcf8976542a685').parentNode.clientWidth + 'px';
+        var chart_c3ecec4a42dd404099fcf8976542a685 = echarts.init(
+            document.getElementById('c3ecec4a42dd404099fcf8976542a685'), 'white', {renderer: 'canvas'});
+        var option_c3ecec4a42dd404099fcf8976542a685 = {
     "animation": true,
     "animationThreshold": 2000,
     "animationDuration": 1000,
@@ -4029,6 +4050,9 @@
             "itemGap": 10,
             "itemWidth": 25,
             "itemHeight": 14,
+            "textStyle": {
+                "color": "#fff"
+            },
             "backgroundColor": "transparent",
             "borderColor": "#ccc",
             "borderWidth": 1,
@@ -4140,7 +4164,11 @@
             "itemGap": 10,
             "textAlign": "auto",
             "textVerticalAlign": "auto",
-            "triggerEvent": false
+            "triggerEvent": false,
+            "textStyle": {
+                "color": "#fff",
+                "fontSize": 18
+            }
         }
     ],
     "dataZoom": [
@@ -4170,7 +4198,7 @@
         }
     ]
 };
-        chart_6faea772076843fe88db55a46d8c416b.setOption(option_6faea772076843fe88db55a46d8c416b);
+        chart_c3ecec4a42dd404099fcf8976542a685.setOption(option_c3ecec4a42dd404099fcf8976542a685);
     </script>
     </div>
 
