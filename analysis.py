@@ -90,7 +90,7 @@ if st.sidebar.button("로그아웃", key="logout2"):
                 st.session_state.logged_in_user = None
                 switch_page("로그아웃")
 
-openai.api_key = st.secrets["auth_token"]
+openai.api_key = st.secrets["auth_key"]
  
 def generate_response(prompt):
     completions = openai.Completion.create (
