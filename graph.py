@@ -119,11 +119,12 @@ def graph_main():
         .add_yaxis("공격시도", yma, color = '#E96479')
         .add_yaxis("피해", ymv, color = '#072227')
         .set_global_opts(
-            title_opts = opts.TitleOpts(title = "분별 악성 접근 빈도-Bar"),
+            title_opts = opts.TitleOpts(title = "분별 악성 접근 빈도-Bar", title_textstyle_opts = opts.TextStyleOpts(color="#fff", font_size=18)),
+            legend_opts = opts.LegendOpts(textstyle_opts=opts.TextStyleOpts(color="#fff")),
             xaxis_opts = opts.AxisOpts(name = "분"),  # X축 이름
             yaxis_opts = opts.AxisOpts(name = "횟수",
-                axislabel_opts = opts.LabelOpts(formatter="{value} (회)")), # Y축 눈금 포맷            
-            datazoom_opts = [opts.DataZoomOpts(), opts.DataZoomOpts(type_ = "inside")]       
+                axislabel_opts = opts.LabelOpts(formatter="{value} (회)")), # Y축 눈금 포맷
+            datazoom_opts = [opts.DataZoomOpts(), opts.DataZoomOpts(type_ = "inside")]          
         )
     )
 
@@ -134,10 +135,11 @@ def graph_main():
         .add_yaxis("공격시도", yma, color = '#E96479', markline_opts = opts.MarkLineOpts(data=[opts.MarkLineItem(type_= 'average', name='평균')]))
         .add_yaxis("피해", ymv, color = '#072227', markline_opts = opts.MarkLineOpts(data=[opts.MarkLineItem(type_= 'average', name='평균')]))
         .set_global_opts(
-            title_opts = opts.TitleOpts(title = "분별 악성 접근 빈도-Line"),
+            title_opts = opts.TitleOpts(title = "분별 악성 접근 빈도-Line", title_textstyle_opts = opts.TextStyleOpts(color="#fff", font_size=18)),
+            legend_opts = opts.LegendOpts(textstyle_opts=opts.TextStyleOpts(color="#fff")),
             xaxis_opts = opts.AxisOpts(name = "분"),  # X축 이름
             yaxis_opts = opts.AxisOpts(name = "횟수",
-                axislabel_opts = opts.LabelOpts(formatter="{value} (회)")), # Y축 눈금 포맷            
+                axislabel_opts = opts.LabelOpts(formatter="{value} (회)")), # Y축 눈금 포맷
             datazoom_opts = [opts.DataZoomOpts(), opts.DataZoomOpts(type_ = "inside")]
         )
     )
@@ -149,11 +151,12 @@ def graph_main():
         .add_yaxis("공격시도", yha, color = '#E96479', markpoint_opts=opts.MarkPointOpts(data=[opts.MarkPointItem(type_="max")]))
         .add_yaxis("피해", yhv, color = '#072227', markpoint_opts=opts.MarkPointOpts(data=[opts.MarkPointItem(type_="max")]))
         .set_global_opts(
-            title_opts = opts.TitleOpts(title = "시간별 악성 접근 빈도-Line"),
-            xaxis_opts = opts.AxisOpts(name = "시간"),  # X축 이름
+            title_opts = opts.TitleOpts(title = "시간별 악성 접근 빈도-Bar", title_textstyle_opts = opts.TextStyleOpts(color="#fff", font_size=18)),
+            legend_opts = opts.LegendOpts(textstyle_opts=opts.TextStyleOpts(color="#fff")),
+            xaxis_opts = opts.AxisOpts(name = "시"),  # X축 이름
             yaxis_opts = opts.AxisOpts(name = "횟수",
-                axislabel_opts = opts.LabelOpts(formatter="{value} (회)")), # Y축 눈금 포맷            
-            datazoom_opts = [opts.DataZoomOpts(), opts.DataZoomOpts(type_ = "inside")]
+                axislabel_opts = opts.LabelOpts(formatter="{value} (회)")), # Y축 눈금 포맷
+            datazoom_opts = [opts.DataZoomOpts(), opts.DataZoomOpts(type_ = "inside")]    
         )
     )
 
@@ -164,11 +167,12 @@ def graph_main():
         .add_yaxis("공격시도", yha, color = '#E96479')
         .add_yaxis("피해", yhv, color = '#072227')
         .set_global_opts(
-            title_opts = opts.TitleOpts(title = "시간별 악성 접근 빈도-Bar"),
-            xaxis_opts = opts.AxisOpts(name = "시간"),  # X축 이름
+            title_opts = opts.TitleOpts(title = "시간별 악성 접근 빈도-Line", title_textstyle_opts = opts.TextStyleOpts(color="#fff", font_size=18)),
+            legend_opts = opts.LegendOpts(textstyle_opts=opts.TextStyleOpts(color="#fff")),
+            xaxis_opts = opts.AxisOpts(name = "시"),  # X축 이름
             yaxis_opts = opts.AxisOpts(name = "횟수",
-                axislabel_opts = opts.LabelOpts(formatter="{value} (회)")), # Y축 눈금 포맷            
-            datazoom_opts = [opts.DataZoomOpts(), opts.DataZoomOpts(type_ = "inside")]       
+                axislabel_opts = opts.LabelOpts(formatter="{value} (회)")), # Y축 눈금 포맷
+            datazoom_opts = [opts.DataZoomOpts(), opts.DataZoomOpts(type_ = "inside")] 
         )
     )
 
@@ -179,11 +183,13 @@ def graph_main():
         .add_yaxis("공격시도", yda, color = '#E96479', markpoint_opts=opts.MarkPointOpts(data=[opts.MarkPointItem(type_= "max")]))
         .add_yaxis("피해", ydv, color = '#072227', markpoint_opts=opts.MarkPointOpts(data=[opts.MarkPointItem(type_= "max")]))
         .set_global_opts(
-            title_opts = opts.TitleOpts(title = "날짜별 악성 접근 빈도-Line"),
+            title_opts = opts.TitleOpts(title = "날짜별 악성 접근 빈도-Bar", title_textstyle_opts = opts.TextStyleOpts(color="#fff", font_size=18)),
+            legend_opts = opts.LegendOpts(textstyle_opts=opts.TextStyleOpts(color="#fff")),
             xaxis_opts = opts.AxisOpts(name = "날짜"),  # X축 이름
-            yaxis_opts = opts.AxisOpts(name = "횟수",
-                axislabel_opts = opts.LabelOpts(formatter="{value} (회)")), # Y축 눈금 포맷            
-            datazoom_opts = [opts.DataZoomOpts(), opts.DataZoomOpts(type_ = "inside")]
+            yaxis_opts = opts.AxisOpts(
+                name = "횟수",
+                axislabel_opts = opts.LabelOpts(formatter="{value} (회)")), # Y축 눈금 포맷
+            datazoom_opts = [opts.DataZoomOpts(), opts.DataZoomOpts(type_ = "inside")]       
         )
     )
 
@@ -194,11 +200,12 @@ def graph_main():
         .add_yaxis("공격시도", yda, color = '#E96479')
         .add_yaxis("피해", ydv, color = '#072227')
         .set_global_opts(
-            title_opts = opts.TitleOpts(title = "날짜별 악성 접근 빈도-Bar"),
+            title_opts = opts.TitleOpts(title = "날짜별 악성 접근 빈도-Line", title_textstyle_opts = opts.TextStyleOpts(color="#fff", font_size=18)),
+            legend_opts = opts.LegendOpts(textstyle_opts=opts.TextStyleOpts(color="#fff")),
             xaxis_opts = opts.AxisOpts(name = "날짜"),  # X축 이름
             yaxis_opts = opts.AxisOpts(name = "횟수",
-                axislabel_opts = opts.LabelOpts(formatter="{value} (회)")), # Y축 눈금 포맷            
-            datazoom_opts = [opts.DataZoomOpts(), opts.DataZoomOpts(type_ = "inside")]       
+                axislabel_opts = opts.LabelOpts(formatter="{value} (회)")), # Y축 눈금 포맷
+            datazoom_opts = [opts.DataZoomOpts(), opts.DataZoomOpts(type_ = "inside")]   
         )
     )
     tab = Tab()
@@ -226,8 +233,10 @@ def graph_main():
             center = ["35%","50%"]
         )
         .set_colors(['#4FBDBA', '#E96479', '#072227'])
-        .set_global_opts(title_opts = opts.TitleOpts(title = "총 접근 목적(%)"),
-                        legend_opts=opts.LegendOpts(orient="vertical", pos_top="80%", pos_left="5%"))
+        .set_global_opts(
+            title_opts = opts.TitleOpts(title = "접근 목적", title_textstyle_opts = opts.TextStyleOpts(color="#fff", font_size=18)),
+            legend_opts=opts.LegendOpts(orient="vertical", pos_top="80%", pos_left="5%", textstyle_opts=opts.TextStyleOpts(color="#fff"))
+        )
         .set_series_opts(label_opts=opts.LabelOpts(formatter="{b}: {c}"))
         .render("graph2.html")
     )
@@ -251,6 +260,9 @@ def graph_main():
             rosetype = "area",
         )
         .set_colors(['#072227', '#778899', '#4FBDBA', '#E96479', '#4FBDBA', '#7A5DC1', '#444693'])
-        .set_global_opts(title_opts = opts.TitleOpts(title = "총 Flags(%)"))
+        .set_global_opts(
+            title_opts = opts.TitleOpts(title = "총 Flags(%)", title_textstyle_opts = opts.TextStyleOpts(color="#fff", font_size=18)),
+            legend_opts=opts.LegendOpts(textstyle_opts=opts.TextStyleOpts(color="#fff"))
+        )
         .render("graph3.html")
     )
