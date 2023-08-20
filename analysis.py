@@ -90,7 +90,7 @@ if st.sidebar.button("로그아웃", key="logout2"):
                 st.session_state.logged_in_user = None
                 switch_page("로그아웃")
 
-openai.api_key = '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'
+openai.api_key = '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'
 
  
 def generate_response(prompt):
