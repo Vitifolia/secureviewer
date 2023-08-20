@@ -149,7 +149,7 @@ def main():
         비즈니스 인텔리전스를 활용하여 경쟁 우위를 얻을 수 있도록 지원하고 있습니다. 
         다양한 데이터 시각화 형식을 지원하여 고객들이 자신들의 데이터를 가장 효과적으로 시각화할 수 있도록 돕습니다. ''')
 
-        with open("test1.html", "r") as file:
+        with open("test1.html", "r", encoding='utf-8') as file:
             html_code1 = file.read()
             st.components.v1.html(html_code1)
      
@@ -161,7 +161,7 @@ def main():
         mdlit('''[green]"Secure Viewer"[/green]는 혁신적인 데이터 시각화와 분석을 통해 기업들이 더 나은 비즈니스 전략을 개발하고, 효율성을 극대화하며, 미래에 대한 확신을 가질 수 있도록 지원합니다. 
             많은 이용바랍니다. 감사합니다.''')
 
-        with open("test2.html", "r") as file:
+        with open("test2.html", "r", encoding='utf-8') as file:
             html_code3 = file.read()
 
             st.components.v1.html(html_code3)
