@@ -203,14 +203,14 @@ def sub_year(member_id):
     db = connect_to_db()
     cursor = db.cursor()
     # 구독 날짜 가져오기
-    query = f"SELECT exp_at FROM tb_user WHERE user_id = {member_id}"
+    query = f"SELECT exp_at FROM tb_user WHERE user_id = '{member_id}'"
     cursor.execute(query)
     exp_at = cursor.fetchone()[0]
 
     one_year_later = exp_at + relativedelta(years=1)
 
     # 구독 확인 상태를 MySQL에 저장
-    update_query = f"UPDATE tb_user SET exp_at = '{one_year_later}' WHERE user_id = {member_id}"
+    update_query = f"UPDATE tb_user SET exp_at = '{one_year_later}' WHERE user_id = '{member_id}'"
     cursor.execute(update_query)
     db.commit()
     cursor.close()
